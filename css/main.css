@@ -65,28 +65,32 @@ body {
     margin: 0 5%;
 }
 
+
 /* ===================
     ALL: Orange Theme
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #133c50;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #133c50;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #17475E;
 }
 
 .title {
     color: white;
+    font-size: 28px;
+
 }
+
 
 /* ==============
     MOBILE: Menu
@@ -94,7 +98,7 @@ body {
 
 nav ul {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     list-style-type: none;
 }
 
@@ -102,23 +106,29 @@ nav a {
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
-
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
     color: white;
-    background: #e44d26;
+    background: #133c50;
 }
 
 nav a:hover,
-nav a:visited {
+nav a:visited,
+nav a:focus {
     color: white;
+    text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background: #fff;
+    color: #333;
+    -webkit-transition: 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: 1s;
 }
+
 
 /* ==============
     MOBILE: Main
@@ -142,6 +152,7 @@ nav a:hover {
     padding: 20px 0;
 }
 
+
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -150,22 +161,48 @@ nav a:hover {
     padding-top: 20px;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+footer span a {
+    color: beige;
+}
 
+footer span a:hover {
+    color: pink;
+}
 
+footer .fa {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
 
+footer .fa:hover {
+    background: #fff;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    color: #333;
+    border: 1px solid #333;
+}
 
+.psi-image {
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
 
-
-
-
-
-
-
-
+h1 {
+    text-shadow: 2px 2px #333;
+}
 
 
 /* ==========================================================================
@@ -173,11 +210,9 @@ nav a:hover {
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-
-/* ====================
+    /* ====================
     INTERMEDIATE: Menu
    ==================== */
-
     nav a {
         float: left;
         width: 27%;
@@ -185,80 +220,73 @@ nav a:hover {
         padding: 25px 2%;
         margin-bottom: 0;
     }
-
     nav li:first-child a {
         margin-left: 0;
     }
-
     nav li:last-child a {
         margin-right: 0;
     }
-
-/* ========================
+    /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
-
     nav ul li {
         display: inline;
     }
-
     .oldie nav a {
         margin: 0 0.7%;
     }
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
+    /* ====================
     WIDE: CSS3 Effects
    ==================== */
-
     .header-container,
     .main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa;
     }
-
-/* ============
+    /* ============
     WIDE: Menu
    ============ */
-
     .title {
         float: left;
     }
-
     nav {
         float: right;
-        width: 38%;
+        width: 60%;
     }
-
-/* ============
+    /* ============
     WIDE: Main
    ============ */
-
     .main article {
         float: left;
         width: 57%;
     }
-
     .main aside {
         float: right;
         width: 28%;
     }
+    header {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 1140px) {
-
-/* ===============
+    /* ===============
     Maximal Width
    =============== */
-
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 1026px;
+        /* 1140px - 10% for margins */
         margin: 0 auto;
     }
+    header {
+        display: inline;
+    }
 }
+
 
 /* ==========================================================================
    Helper classes
@@ -308,6 +336,7 @@ nav a:hover {
     *zoom: 1;
 }
 
+
 /* ==========================================================================
    Print styles
    ========================================================================== */
@@ -321,51 +350,41 @@ nav a:hover {
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
