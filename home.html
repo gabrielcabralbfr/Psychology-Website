@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Psicóloga Derly Cabral</title>
-    <meta name="description" content="Site da psicóloga Derly de Souza Cabral, voltado para clientes que desejam se consultar e saber mais sobre o trabalho, consultório e perfil da psicóloga que desenvolve atendimento de qualidade, efetuando diagnósticos eficientes de acompanhamento e psicanálise">
+    <meta name="description" content="Site da psicóloga Derly de Souza Cabral, voltado para clientes que desejam se consultar e saber mais sobre o trabalho, consultório, artigos e perfil da psicóloga que desenvolve atendimento de qualidade, efetuando diagnósticos eficientes de acompanhamento e psicanálise">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./img/psi_edited.jpg" />
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -32,19 +32,68 @@
             <h1 class="title">Psicóloga Derly Cabral</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Sobre mim</a></li>
                     <li><a href="#">Contato</a></li>
                     <li><a href="#">Atendimento</a></li>
+                    <li><a href="#">Artigos</a></li>
                 </ul>
             </nav>
         </header>
     </div>
 
+    <div id="authors-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#authors-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#authors-carousel" data-slide-to="1"></li>
+            <li data-target="#authors-carousel" data-slide-to="2"></li>
+            <li data-target="#authors-carousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="./img/sigmund-freud.jpg" alt="Sigmund Freud">
+                <div class="carousel-caption">
+                    <h3>Sigmund Freud</h3>
+                    <p>Psicólogo e precursor da psicanálise</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/Donald-Winnicott.jpg" alt="Donald Winnicott">
+                <div class="carousel-caption">
+                    <h3>Donald Winnicott</h3>
+                    <p>Psicólogo</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/melanie-klein.jpg" alt="Melanie Klein">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./img/alexander-luria.jpg" alt="Alexander Luria">
+                <div class="carousel-caption">
+                    <h3>Alexander Luria</h3>
+                    <p>Psicólogo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#authors-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#authors-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     <div class="main-container">
         <div class="main wrapper clearfix">
-            <div>
 
-            </div>
             <article>
                 <header>
                     <h1>article header h1</h1>
@@ -59,27 +108,18 @@
                         consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam
                         ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
                 </section>
-                <section>
-                    <h2>article section h2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.
-                        Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper
-                        consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam
-                        ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                </section>
-                <footer>
-                    <h3>article footer h3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.
-                        Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper
-                        consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                </footer>
+
             </article>
 
             <aside>
-                <h3>aside</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc
-                    vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat
-                    est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper
-                    lorem dapibus velit suscipit ultrices.</p>
+                <h3>Artigos</h3>
+                <ul>
+                    <li><a href="">CRP</a></li>
+                    <li><a href="">Escolas</a></li>
+                    <li><a href="">Psicanálise</a></li>
+                    <li><a href="">Psicologia</a></li>
+                    <li><a href="">Autores e teorias</a></li>
+                </ul>
             </aside>
 
         </div>
@@ -97,12 +137,13 @@
             </div>
             <img src="./img/derly.png" alt="" class="img-responsive img-circle">
             <span>E-mail: <a href="mailto:derlycabral@gmail.com">derlycabral@gmail.com</a></span>
-            <p>&copy; 2017 - Derly de Souza Cabral - CRP: xxxxxx</p>
-            <span class="pull-right">Desenvolvido por: <span>Gabriel Cabral</span></span>
+            <p>&copy;Copyright 2017 - Derly de Souza Cabral - CRP: xxxxxx</p>
+            <span class="pull-right developer">Desenvolvido por: <span>Gabriel Cabral</span></span>
         </footer>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="js/main.js"></script>
